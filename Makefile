@@ -20,7 +20,7 @@ define Package/tumgrd
   CATEGORY:=Network
   TITLE:=tumgrd traffic manager daemon
   URL:=https://github.com/hrimfaxi/tumgrd
-  DEPENDS:=+libubox +libubus +libuci +libsqlite3
+  DEPENDS:=+libubox +libubus +libuci +libsqlite3 +tutuicmptunnel
 endef
 
 define Package/tumgrd/description
