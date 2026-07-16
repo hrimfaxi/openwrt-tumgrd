@@ -34,7 +34,7 @@ define Package/tumgrd/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/tumgr $(1)/usr/bin/
 
 	$(INSTALL_DIR) $(1)/etc/config
-	$(INSTALL_CONF) $(PKG_BUILD_DIR)/contrib/etc/config/tumgrd $(1)/etc/config/
+	$(INSTALL_DATA) $(PKG_BUILD_DIR)/contrib/etc/config/tumgrd $(1)/etc/config/
 
 	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/contrib/etc/init.d/tumgrd $(1)/etc/init.d/
