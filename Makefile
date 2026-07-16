@@ -29,8 +29,8 @@ endef
 
 # 你的 CMakeLists.txt 没有 install() 规则，二进制留在 build 目录
 define Package/tumgrd/install
-	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/tumgrd $(1)/usr/bin/
+	$(INSTALL_DIR) $(1)/usr/sbin
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/tumgrd $(1)/usr/sbin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/tumgr $(1)/usr/bin/
 
 	$(INSTALL_DIR) $(1)/etc/config
