@@ -31,6 +31,7 @@ endef
 define Package/tumgrd/install
 	$(INSTALL_DIR) $(1)/usr/sbin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/tumgrd $(1)/usr/sbin/
+	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/tumgr $(1)/usr/bin/
 
 	$(INSTALL_DIR) $(1)/etc/config
